@@ -28,6 +28,7 @@ c.) Error message when data input is lower than 5 or bigger than 25 for both hei
 b.) Add Rectangle Dialog Appear to UI.
 ---------------
  * Starting coordinate sets at which the upper left corner of the rectangle will it start (XX,YY)
+ ---------------
      *XX is numbers from 00->24 represents the rows of the grid.
      *YY is numbers from 00->24 represents the columns of the grid.
 ![alt text](https://github.com/MarkSuguitan-10/FlareCodingTest/blob/main/FlareScreenshot/FlareDatagridAddRectange.png)
