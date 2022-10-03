@@ -15,11 +15,13 @@ namespace FlareCodingTest.Models
         public int RectanglesCount { get { return newrectangles.Count; } }
         private Random rnd = new Random();
         public List<Rectangle> GetRectangles { get { return newrectangles; } }
+        private int NumberOfRectangles = 0;
 
         public Rectangles(System.Windows.Forms.DataGridView ContainerGridView)
         {
             this.ContainerGridView = ContainerGridView;
             newrectangles = new List<Rectangle>();
+            NumberOfRectangles = 0;
         }
 
         public bool AddRectangles(Models.Rectangle rectangle, FlareGrid mygrid)
@@ -39,7 +41,8 @@ namespace FlareCodingTest.Models
                 result = CheckIfRectangleDoesOverlap(rectangle.rectangleCoordinates);
                 if (result == false)
                 {
-                    rectangle.rectangleLabel = "Rectangle_" + (newrectangles.Count + 1).ToString();
+                    NumberOfRectangles = NumberOfRectangles + 1;
+                    rectangle.rectangleLabel = "Rectangle_" + (NumberOfRectangles).ToString();
                     newrectangles.Add(rectangle);
                     mygrid.GenerateRectangle(rectangle);
                 }
