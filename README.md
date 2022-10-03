@@ -53,4 +53,5 @@ b.) Remove Rectangle Dialog Appear to UI. Press Cancel to exit without resizing,
      *When name is selected rectangle is removed from grid.
 ![alt text](https://github.com/MarkSuguitan-10/FlareCodingTest/blob/main/FlareScreenshot/FlareDatagridRemoveRectangleDialog.png)
 ---------------
+7.)Any advice on this application is highly appreciated.
 
